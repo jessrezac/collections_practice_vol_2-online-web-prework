@@ -86,7 +86,7 @@ def organize_schools(schools)
 # level one is school names
   schools.each do |name, attributes|
     sorted_by_location[attributes[:location]] = name
-      
-      binding.pry
   end
+
+  sorted_by_location
 end
