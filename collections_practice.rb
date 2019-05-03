@@ -73,12 +73,8 @@ def find_cool(arr1)
   cool_person = []
 
   arr1.each do |hsh1|
-    binding.pry
-    hsh1.each do |k, v|
-      binding.pry
-        if hsh2[:temperature] == "cool"
-          cool_person << hsh2
-        end
+    if hsh1[:temperature] == "cool"
+        cool_person << hsh1[:name]
     end
   end
 
