@@ -91,5 +91,7 @@ def organize_schools(schools)
       sorted_by_location[attributes[:location]] = [name]
     end
 
+  end
+
   sorted_by_location
 end
