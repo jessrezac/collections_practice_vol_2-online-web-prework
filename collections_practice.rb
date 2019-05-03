@@ -68,3 +68,11 @@ def merge_data(arr1, arr2)
     new_details
   end
 end
+
+def find_cool(cool)
+  cool.each do |hsh|
+    hsh.each do |k, v|
+      binding.pry
+    end
+  end
+end
