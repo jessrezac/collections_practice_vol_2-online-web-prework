@@ -75,7 +75,7 @@ def find_cool(arr1)
   arr1.each do |hsh|
     hsh.each do |k, v|
       if hsh[:temperature] == "cool"
-        cool_person << hsh[:name]
+        cool_person << hsh
       end
     end
   end
