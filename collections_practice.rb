@@ -82,8 +82,11 @@ def find_cool(arr1)
 end
 
 def organize_schools(schools)
+  sorted_by_location = {}
 # level one is school names
   schools.each do |name, attributes|
-    binding.pry
+    sorted_by_location[attributes[:location]] = name
+      
+      binding.pry
   end
 end
