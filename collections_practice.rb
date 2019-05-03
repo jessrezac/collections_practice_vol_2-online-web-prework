@@ -82,5 +82,5 @@ def find_cool(arr1)
 end
 
 def organize_schools(schools)
-  schools.flatten.values.sort
+  schools.flatten.sort
 end
