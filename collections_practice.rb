@@ -85,7 +85,8 @@ def organize_schools(schools)
   sorted_by_location = {}
 # level one is school names
   schools.each do |name, attributes|
-    sorted_by_location[attributes[:location]] = name
+    if sorted_by_location.include?(attributes[:location])
+      sorted_by_location[attributes[:location]] << [name]
   end
 
   sorted_by_location
