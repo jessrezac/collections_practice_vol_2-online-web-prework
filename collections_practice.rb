@@ -69,10 +69,16 @@ def merge_data(arr1, arr2)
   end
 end
 
-def find_cool(cool)
-  cool.each do |hsh|
+def find_cool(arr1)
+  cool_person = []
+
+  arr1.each do |hsh|
     hsh.each do |k, v|
-      binding.pry
+      if hsh[:temperature] == "cool"
+        cool_person << hsh[:name]
+      end
     end
   end
+
+  cool_person
 end
