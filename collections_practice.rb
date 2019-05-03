@@ -82,5 +82,8 @@ def find_cool(arr1)
 end
 
 def organize_schools(schools)
-  schools.flatten.sort
+# level one is school names
+  schools.each do |name, attributes|
+    binding.pry
+  end
 end
